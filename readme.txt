@@ -3,7 +3,7 @@ Version: 1.0.0
 Author URI: http://www.nitin247.com/
 Author: Nitin Prakash
 Donate link: http://www.nitin247.com/
-Tags: hire, status, availability, widget, widgets, Nitin Prakash
+Tags: hire me widget, hire me, status, availability, widget, widgets
 Requires at least: 3.8
 Tested up to 4.9.1
 Stable Tag: Trunk
@@ -12,7 +12,7 @@ Effortlessly display if your team or you are available for hire using this widge
 
 == Description ==
 
-This plugin is a remake of original [https://github.com/NitinPrakash/hire-me-widget](Hire Me Status Widget Plugin). This is not a version 2.0 of the plugin but complete remake of the plugin since the original plugin is either abandoned or neglected by the developer and not updated since last 2 years.
+This plugin is a remake of original https://wordpress.org/plugins/hire-me-status-widget/ (Hire Me Status Widget Plugin). This is not a version 2.0 of the plugin but complete remake of the plugin since the original plugin is either abandoned or neglected by the developer and not updated since last 2 years.
 
 = Widget Options =
 
