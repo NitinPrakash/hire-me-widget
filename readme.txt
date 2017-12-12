@@ -12,6 +12,8 @@ Effortlessly display if your team or you are available for hire using this widge
 
 == Description ==
 
+Effortlessly display if your team or you are available for hire using this widget. Useful for freelance developers or designers like me.
+
 This plugin is a remake of original https://wordpress.org/plugins/hire-me-status-widget/ (Hire Me Status Widget Plugin). This is not a version 2.0 of the plugin but complete remake of the plugin since the original plugin is either abandoned or neglected by the developer and not updated since last 2 years.
 
 = Widget Options =
