@@ -1,12 +1,13 @@
 === Hire Me Widget ===
-Version: 1.0.0
+Contributors: nitin247
+Version: 1.0.2
 Author URI: http://www.nitin247.com/
 Author: Nitin Prakash
 Donate link: http://www.nitin247.com/plugin/hire-me-widget/
-Tags: hire me widget, hire me, status, availability, widget, widgets
+Tags: hire me widget, hire, status, availability, widget, widgets, hire me status, plugin
 Requires at least: 3.8
-Tested up to: 4.9.1
-Stable Tag: Trunk
+Tested up to: 4.9.7
+Stable tag: 4.7
 
 Effortlessly display if your team or you are available for hire using this widget. Useful for freelance developers or designers like me.
 
@@ -42,3 +43,11 @@ Once the plugin is installed and activated, go to "Appearance" then, "Widgets". 
 = 1.0.0 =
 
 * Initial release
+
+= 1.0.1 =
+
+* Bug fix -  Missing argument 1 for WP_Widget::__construct()
+
+= 1.0.2 =
+
+* Bug fix -  Fix for PHP7

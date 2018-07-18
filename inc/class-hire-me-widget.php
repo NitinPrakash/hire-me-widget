@@ -1,8 +1,12 @@
 <?php class Hire_Me_Widget extends WP_Widget {
 
 	// constructor
-	function Hire_Me_Widget() {
-            parent::WP_Widget(false, $name = __('Hire Me Widget', 'hire-me-widget') );
+	public function __construct() {
+		$widget_ops = array( 
+			'classname' => 'hire_me_widget',
+			'description' => 'Easily show your hire availability',
+		);
+		parent::__construct( 'hire_me_widget', 'Hire Me Widget', $widget_ops );
 	}
 
 	// widget form creation
@@ -26,11 +30,11 @@
             ?>
 
             <p>
-                <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'wp_widget_plugin'); ?></label>
+                <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'hire-me-widget'); ?></label>
                 <input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" class="widefat" />
             </p>
             <p>    
-                <label for="<?php echo $this->get_field_id('team_type'); ?>"><?php _e('Team Members', 'wp_widget_plugin'); ?></label>
+                <label for="<?php echo $this->get_field_id('team_type'); ?>"><?php _e('Team Members', 'hire-me-widget'); ?></label>
                 <select name="<?php echo $this->get_field_name('team_type'); ?>" id="<?php echo $this->get_field_id('team_type'); ?>" class="widefat">
                 <?php
                     $options = array('I am a Freelancer', 'We are an Agency');
@@ -41,7 +45,7 @@
                 </select>
             </p>
             <p>    
-                <label for="<?php echo $this->get_field_id('status'); ?>"><?php _e('Status', 'wp_widget_plugin'); ?></label>
+                <label for="<?php echo $this->get_field_id('status'); ?>"><?php _e('Status', 'hire-me-widget'); ?></label>
                 <select name="<?php echo $this->get_field_name('status'); ?>" id="<?php echo $this->get_field_id('status'); ?>" class="widefat">
                 <?php
                     $options = array('Available', 'Unavailable');
@@ -52,7 +56,7 @@
                 </select>
             </p>
             <p>    
-                <label for="<?php echo $this->get_field_id('freelance_site'); ?>"><?php _e('Freelance Website', 'wp_widget_plugin'); ?></label>
+                <label for="<?php echo $this->get_field_id('freelance_site'); ?>"><?php _e('Freelance Website', 'hire-me-widget'); ?></label>
                 <select name="<?php echo $this->get_field_name('freelance_site'); ?>" id="<?php echo $this->get_field_id('freelance_site'); ?>" class="widefat">
                 <?php
                 
@@ -66,7 +70,7 @@
             </p> 
             
             <p>
-                <label for="<?php echo $this->get_field_id('button_url'); ?>"><?php _e('Button Url', 'wp_widget_plugin'); ?></label>
+                <label for="<?php echo $this->get_field_id('button_url'); ?>"><?php _e('Button Url', 'hire-me-widget'); ?></label>
                 <input id="<?php echo $this->get_field_id('button_url'); ?>" name="<?php echo $this->get_field_name('button_url'); ?>" type="text" value="<?php echo $button_url; ?>" class="widefat" />
             </p>
             

@@ -12,7 +12,7 @@
  * Plugin Name:       Hire Me Widget
  * Plugin URI:        http://www.nitin247.com/wp-plugins/hire-me-widget/
  * Description:       Effortlessly display if your team or you are available for hire using this widget. Useful for freelance developers or designers like me.
- * Version:           1.0.0
+ * Version:           1.0.2
  * Author:            Nitin Prakash
  * Author URI:        http://www.nitin247.com/
  * License:           GPL-2.0+
@@ -55,14 +55,19 @@ require plugin_dir_path( __FILE__ ) . 'inc/class-hire-me-widget.php';
  * Begins execution of the plugin.
  * @since    1.0.0
  */
-function run_hire_me_widget() {
-    
-wp_enqueue_style( 'hire-me-widget', HMW_DIRECTORY . 'assets/hmw.css' );    
+function run_hire_me_widget() {      
 
 $plugin = new Hire_Me_Widget();
 $plugin->run();
 
 }
+
+add_action( 'wp_enqueue_scripts', 'hire_me_widget_styles_enqueue' );
+
+function hire_me_widget_styles_enqueue(){
+    wp_enqueue_style( 'hire-me-widget', HMW_DIRECTORY . 'assets/hmw.css' ); 
+}
+
 
 // Fire the Hire Me Widget
 run_hire_me_widget();
