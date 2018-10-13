@@ -6,7 +6,7 @@ Author: Nitin Prakash
 Donate link: http://www.nitin247.com/plugin/hire-me-widget/
 Tags: hire me widget, hire, status, availability, widget, widgets, hire me status, plugin
 Requires at least: 3.8
-Tested up to: 4.9.7
+Tested up to: 4.9.8
 Stable tag: 4.7
 
 Effortlessly display if your team or you are available for hire using this widget. Useful for freelance developers or designers like me.
